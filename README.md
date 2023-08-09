@@ -16,9 +16,9 @@ Given a maze where 0 represents open paths and 1 represents walls, along with a 
 
 ## Usage
 
-1. Clone this repository: `git clone https://github.com/your-username/maze-problem-solver.git`
+1. Clone this repository: `https://github.com/Yajiehan/Algorithm-BFS-Maze/blob/main/BFS_Maze.ipynb`
 2. Modify the `maze` grid, `start`, and `destination` variables in the provided Python script.
-3. Run the script: `python maze_solver.py`
+3. Run the script: `https://github.com/Yajiehan/Algorithm-BFS-Maze/blob/main/BFS_Maze.ipynb`
 
 ## Example
 

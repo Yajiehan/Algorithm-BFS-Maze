@@ -1,18 +1,31 @@
 # Maze Problem Solver
 
-This repository contains a Python implementation of solving maze problems using the Breadth-First Search (BFS) algorithm.
+This project is a solution to the LeetCode problem 490. The Maze, using the Breadth First Search (BFS) algorithm to find the shortest path from the start to the destination in a given maze.
 
 ## Problem Description
 
-Given a maze where 0 represents open paths and 1 represents walls, along with a starting point (startX, startY) and a destination point (destinationX, destinationY), this algorithm determines if a ball can roll from the starting point to the destination, following the rules of rolling only in cardinal directions until hitting a wall.
+You are given a 2D matrix representing a maze. The maze consists of open cells and walls. You need to find the shortest path from the start point to the destination point. The path can only be formed by moving up, down, left, or right, and you can't move through walls.
 
 ## Algorithm Steps
 
-1. Create a queue to store positions (x, y) and their respective paths.
-2. Enqueue the starting point into the queue and mark it as visited.
-3. Use a BFS loop to explore directions from the dequeued position.
-4. If the destination is encountered during exploration, return True.
-5. If the queue becomes empty without reaching the destination, return False.
+Breadth First Search (BFS) is used to explore all possible paths from a starting point and gradually move outward. In the context of the maze problem, BFS can be applied as follows:
+
+1.Start with the initial position as the starting point.
+2.Enqueue the starting point into the queue and mark it as visited.
+3.While the queue is not empty, do the following:
+  1)Dequeue the front element from the queue.
+  2)Check if the current element is the destination. If yes, return the path.
+  3)Otherwise, enqueue the neighboring unvisited cells and mark them as visited.
+4.If the queue becomes empty and the destination is not reached, there is no valid path.
+
+## Solution Approach
+1.Implement a BFS function that takes the maze, start, and destination as inputs.
+2.Initialize a queue for BFS traversal.
+3.Enqueue the starting point into the queue and mark it as visited.
+4.While the queue is not empty, dequeue the front element and check for the destination.
+5.If the destination is found, return the path.
+6.Otherwise, enqueue the neighboring unvisited cells and mark them as visited.
+7.Repeat until the queue is empty.
 
 ## Usage
 
